@@ -4,6 +4,9 @@ Current version: see `VERSION` in [hunterdouglas-poly.py](hunterdouglas-poly.py)
 
 ## Recent (also in hunterdouglas-poly.py)
 
+### 1.13.6
+- DONE package updates "dependabot" — aiohttp 3.14.3 security fixes
+
 ### 1.13.5
 - DONE sync versionHistory.md with hunterdouglas-poly.py; older history in versionHistory.md only
 - DONE fix ready_event poll checks (Controller, Shade, Scene)

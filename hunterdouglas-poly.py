@@ -19,8 +19,11 @@ from udi_interface import Interface, LOGGER
 from nodes import Controller
 
 
-VERSION = "1.13.5"
+VERSION = "1.13.6"
 """
+1.13.6
+DONE package updates "dependabot" — aiohttp 3.14.3 security fixes
+
 1.13.5
 DONE sync versionHistory.md with hunterdouglas-poly.py; older history in versionHistory.md only
 DONE fix ready_event poll checks (Controller, Shade, Scene)
