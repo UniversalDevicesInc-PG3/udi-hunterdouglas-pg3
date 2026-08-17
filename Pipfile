@@ -7,7 +7,6 @@ name = "pypi"
 udi-interface = "*"
 requests = "*"
 aiohttp = "*"
-pytest = "*"
 
 [dev-packages]
 pre-commit = "*"
