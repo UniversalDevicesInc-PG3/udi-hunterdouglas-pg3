@@ -1,0 +1,24 @@
+{
+    "name": "Hunter Douglas",
+    "docs": "https://github.com/UniversalDevicesInc-PG3/udi-hunterdouglas-pg3",
+    "type": "python3",
+    "executable": "hunterdouglas-poly.py",
+    "install": "install.sh",
+    "description": "Interface between Hunter Douglas PowerView shades and Polyglot for EISY/Polisy.",
+    "shortPoll": "60",
+    "longPoll": "600",
+    "logLevel": "INFO",
+    "customParams": {
+        "gatewayip": ""
+    },
+    "credits": [
+        {
+            "title": "Hunter Douglas PowerView NodeServer",
+            "author": "Stephen Jenkins",
+            "version": "1.13.6",
+            "date": "August 2026",
+            "source": "https://github.com/UniversalDevicesInc-PG3/udi-hunterdouglas-pg3",
+            "license": "https://github.com/UniversalDevicesInc-PG3/udi-hunterdouglas-pg3/blob/main/LICENSE"
+        }
+    ]
+}
