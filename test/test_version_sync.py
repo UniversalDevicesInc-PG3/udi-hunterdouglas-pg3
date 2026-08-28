@@ -6,7 +6,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ENTRY = ROOT / "hunterdouglas-poly.py"
+ENTRY = ROOT / "udi-hunterdouglas-pg3x.py"
 VERSION_FILE = ROOT / "profile" / "version.txt"
 
 

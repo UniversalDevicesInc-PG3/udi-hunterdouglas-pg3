@@ -1,6 +1,6 @@
 
 NAME = Hunter-Douglas
-ENTRY = hunterdouglas-poly.py
+ENTRY = udi-hunterdouglas-pg3x.py
 XML_FILES = profile/*/*.xml
 
 .PHONY: all check clean format fulltest install lint test coverage coverage-html coverage-report zip sync-version

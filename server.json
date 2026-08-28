@@ -2,7 +2,7 @@
     "name": "Hunter Douglas",
     "docs": "https://github.com/UniversalDevicesInc-PG3/udi-hunterdouglas-pg3",
     "type": "python3",
-    "executable": "hunterdouglas-poly.py",
+    "executable": "udi-hunterdouglas-pg3x.py",
     "install": "install.sh",
     "description": "Interface between Hunter Douglas PowerView shades and Polyglot for EISY/Polisy.",
     "shortPoll": "60",

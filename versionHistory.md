@@ -1,14 +1,14 @@
 # Version History
 
-Current version: see `VERSION` in [hunterdouglas-poly.py](hunterdouglas-poly.py).
+Current version: see `VERSION` in [udi-hunterdouglas-pg3x.py](udi-hunterdouglas-pg3x.py).
 
-## Recent (also in hunterdouglas-poly.py)
+## Recent (also in udi-hunterdouglas-pg3x.py)
 
 ### 1.13.6
 - DONE package updates "dependabot" — aiohttp 3.14.3 security fixes
 
 ### 1.13.5
-- DONE sync versionHistory.md with hunterdouglas-poly.py; older history in versionHistory.md only
+- DONE sync versionHistory.md with udi-hunterdouglas-pg3x.py; older history in versionHistory.md only
 - DONE fix ready_event poll checks (Controller, Shade, Scene)
 - DONE fix updateAllFromServer throttling and in-progress guard
 - DONE fix parameterHandler startup flag after checkParams
