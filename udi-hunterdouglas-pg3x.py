@@ -5,7 +5,7 @@ Interface between Hunter Douglas shades and Polyglot.
 
 (C) 2025 Stephen Jenkins
 
-Version history: see versionHistory.md
+Version history: see CHANGELOG.md
 """
 
 import sys
