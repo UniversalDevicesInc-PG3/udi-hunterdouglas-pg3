@@ -86,4 +86,4 @@ gateways you have
 [licenseFile]: LICENSE
 [polyglot]: https://github.com/UniversalDevicesInc/pg3-dist
 [forum]: https://forum.universal-devices.com/forum/439-hunter-douglas/
-[troubleshoot]: https://github.com/sejgit-udi-plugins/ud-hunterdouglas-pg3x/blob/main/docs/troubleshooting.md
+[troubleshoot]: https://github.com/sejgit-udi-plugins/udi-hunterdouglas-pg3x/blob/main/docs/troubleshooting.md
