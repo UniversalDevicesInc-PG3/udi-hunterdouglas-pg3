@@ -13,13 +13,13 @@ check:
 	xmllint --noout ${XML_FILES}
 
 install:
-	pipenv install --dev
+	uv sync --dev
 
 lint:
-	pipenv run ruff check .
+	uv run ruff check .
 
 format:
-	pipenv run ruff format .
+	uv run ruff format .
 
 clean:
 	find . -type f -name "*.py[co]" -delete
@@ -34,13 +34,13 @@ zip:
 	zip -x@zip_exclude.lst -r ${NAME}.zip *
 
 test:
-	pipenv run pytest
+	uv run pytest
 
 coverage:
-	pipenv run pytest --cov=nodes --cov=utils --cov-report=term-missing
+	uv run pytest --cov=nodes --cov=utils --cov-report=term-missing
 
 coverage-html:
-	pipenv run pytest --cov=nodes --cov=utils --cov-report=html --cov-report=term-missing
+	uv run pytest --cov=nodes --cov=utils --cov-report=html --cov-report=term-missing
 	@echo ""
 	@echo "Coverage report generated! Open htmlcov/index.html in your browser."
 
@@ -48,7 +48,7 @@ coverage-report: coverage-html
 	open htmlcov/index.html
 
 fulltest:
-	pipenv run pre-commit run --all-files
+	uv run pre-commit run --all-files
 
 sync-version:
-	pipenv run python scripts/sync_version.py --entry $(ENTRY)
+	uv run python scripts/sync_version.py --entry $(ENTRY)
