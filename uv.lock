@@ -1165,6 +1165,8 @@ dev = [
     { name = "pre-commit" },
     { name = "pytest" },
     { name = "pytest-cov" },
+]
+lint = [
     { name = "ruff" },
 ]
 
@@ -1180,8 +1182,8 @@ dev = [
     { name = "pre-commit" },
     { name = "pytest" },
     { name = "pytest-cov" },
-    { name = "ruff" },
 ]
+lint = [{ name = "ruff" }]
 
 [[package]]
 name = "udi-interface"
