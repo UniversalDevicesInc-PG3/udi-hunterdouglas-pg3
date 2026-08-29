@@ -4,6 +4,14 @@ Current version: see `VERSION` in [udi-hunterdouglas-pg3x.py](udi-hunterdouglas-
 
 ## Recent (also in udi-hunterdouglas-pg3x.py)
 
+### 1.14.0
+- DONE PG3 store manifest (`server.json`) with executable `udi-hunterdouglas-pg3x.py`
+- DONE rename entry script from `hunterdouglas-poly.py` to `udi-hunterdouglas-pg3x.py` (use **Update** from the store; delete/reinstall if the node server fails to start)
+- DONE standard bootstrap (error handling, version in `VERSION` / `profile/version.txt` / `server.json`)
+- DONE default branch and documentation links aligned with `udi-hunterdouglas-pg3x` naming
+- DONE developer toolchain: uv, pytest profile sync test, Makefile (runtime install unchanged: `install.sh` + `requirements.txt`)
+- DONE includes aiohttp 3.14.3 security updates from 1.13.6
+
 ### 1.13.6
 - DONE package updates "dependabot" — aiohttp 3.14.3 security fixes
 
