@@ -393,6 +393,8 @@ class Controller(Node):
         for param, default_value in defaults.items():
             if param not in self.Parameters:
                 self.Parameters[param] = default_value
+            elif default_value and not str(self.Parameters.get(param, "")).strip():
+                self.Parameters[param] = default_value
 
         if self.checkParams():
             self.handler_params_st = True
@@ -475,8 +477,10 @@ class Controller(Node):
         # gatewaycheck = self.gateway
         self.gateway = self.Parameters.gatewayip
 
-        # gatewayip is None ; assign default
-        if self.gateway is None:
+        # gatewayip is None or blank; assign default
+        if self.gateway is None or (
+            isinstance(self.gateway, str) and not self.gateway.strip()
+        ):
             self.gateway = URL_DEFAULT_GATEWAY
             LOGGER.info(
                 "Gateway not defined in customParams, using {}".format(

@@ -8,7 +8,11 @@ Interface between Hunter Douglas shades and Polyglot.
 Version history: see CHANGELOG.md
 """
 
+import os
 import sys
+from pathlib import Path
+
+os.chdir(Path(__file__).resolve().parent)
 
 import udi_interface
 
