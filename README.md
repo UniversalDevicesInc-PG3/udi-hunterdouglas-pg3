@@ -24,6 +24,7 @@ and updated from forum discussions
 **IMPORTANT:** There are differences for HunterDouglas G3 API versus G2 API
 
 * **new in 1.13.5:** `gatewayip` accepts hostnames (e.g. `powerview-g3.local`) as well as IP addresses — see [Configuration][configuration]
+* **new in 1.14.0:** store installs use `udi-hunterdouglas-pg3x.py` and `server.json`; use **Update** from the PG3 store (same as other store plugins)
 
 See the [**Configuration**][configuration] file for details
 

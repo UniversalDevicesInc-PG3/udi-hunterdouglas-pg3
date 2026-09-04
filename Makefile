@@ -1,8 +1,9 @@
 
 NAME = Hunter-Douglas
+ENTRY = udi-hunterdouglas-pg3x.py
 XML_FILES = profile/*/*.xml
 
-.PHONY: all check clean format fulltest install lint test coverage coverage-html coverage-report zip
+.PHONY: all check clean format fulltest install install-eisy lint test coverage coverage-html coverage-report zip sync-version
 
 all: lint test
 
@@ -12,13 +13,16 @@ check:
 	xmllint --noout ${XML_FILES}
 
 install:
-	pipenv install --dev
+	uv sync --dev --group lint
+
+install-eisy:
+	uv sync --dev
 
 lint:
-	pipenv run ruff check .
+	uv run ruff check .
 
 format:
-	pipenv run ruff format .
+	uv run ruff format .
 
 clean:
 	find . -type f -name "*.py[co]" -delete
@@ -30,16 +34,17 @@ clean:
 
 
 zip:
+	@test -f zip_exclude.lst || (echo "zip_exclude.lst missing" && exit 1)
 	zip -x@zip_exclude.lst -r ${NAME}.zip *
 
 test:
-	pipenv run pytest
+	uv run pytest
 
 coverage:
-	pipenv run pytest --cov=nodes --cov=utils --cov-report=term-missing
+	uv run pytest --cov=nodes --cov=utils --cov-report=term-missing
 
 coverage-html:
-	pipenv run pytest --cov=nodes --cov=utils --cov-report=html --cov-report=term-missing
+	uv run pytest --cov=nodes --cov=utils --cov-report=html --cov-report=term-missing
 	@echo ""
 	@echo "Coverage report generated! Open htmlcov/index.html in your browser."
 
@@ -47,4 +52,7 @@ coverage-report: coverage-html
 	open htmlcov/index.html
 
 fulltest:
-	pipenv run pre-commit run --all-files
+	uv run pre-commit run --all-files
+
+sync-version:
+	uv run python scripts/sync_version.py --entry $(ENTRY)

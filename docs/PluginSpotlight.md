@@ -43,9 +43,9 @@ $10 one-time fee.
 ## INSTRUCTIONS
 
 For instructions and help, please visit the Hunter Douglas Plugin’s GitHub site
-**[github site](https://github.com/sejgit/udi-hunterdouglas-pg3 "udi-hunterdouglas-pg3")**.
+**[github site](https://github.com/sejgit-udi-plugins/udi-hunterdouglas-pg3x "udi-hunterdouglas-pg3x")**.
 There is also
-**[configuration help](https://github.com/sejgit/udi-hunterdouglas-pg3/blob/master/POLYGLOT_CONFIG.md)**.
+**[configuration help](https://github.com/sejgit-udi-plugins/udi-hunterdouglas-pg3x/blob/main/POLYGLOT_CONFIG.md)**.
 Hunter Douglas Plugin also has a
 **[dedicated forum](https://forum.universal-devices.com/forum/439-hunter-douglas/)**.
 

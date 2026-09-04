@@ -12,7 +12,6 @@ build.txt
 *.so
 
 # Distribution / packaging
-.python-version
 env/
 .venv/
 venv/
@@ -82,7 +81,6 @@ target/
 
 # Environment variables
 .env
-.envrc
 
 # macOS
 .AppleDouble

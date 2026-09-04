@@ -56,7 +56,7 @@ repos:
         # 2. Use: bash -c 'pipenv run pytest || [ $? -eq 5 ]' (exit code 5 = no tests collected)
         # 3. Use: bash -c 'pipenv run pytest || true' (always pass, not recommended)
         # Currently using approach #2 - fails on real errors but passes if no tests found
-        entry: bash -c 'pipenv run pytest || [ $? -eq 5 ]'
+        entry: bash -c 'uv run pytest || [ $? -eq 5 ]'
         language: system
         types: [python]
         pass_filenames: false # Always run the full suite
